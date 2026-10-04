@@ -1,0 +1,396 @@
+Claro — aqui está o HTML completo. Salve como **`index.html`** e abra no navegador:
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA e Deepfakes nas Eleições</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f7f7;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #8b0000, #d40000);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: #a00000;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #e00000;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        .titulo {
+            text-align: center;
+            color: #a00000;
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .intro {
+            background: white;
+            border-left: 6px solid #c00000;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            font-size: 18px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-top: 5px solid #c00000;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h3 {
+            color: #a00000;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .perigo {
+            background: #a00000;
+            color: white;
+            max-width: none;
+        }
+
+        .perigo .titulo {
+            color: white;
+        }
+
+        .perigo-conteudo {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .alerta {
+            background: white;
+            color: #333;
+            padding: 25px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+
+        .alerta strong {
+            color: #a00000;
+        }
+
+        .como-identificar {
+            background: #fff;
+        }
+
+        .lista {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .lista li {
+            background: white;
+            margin: 15px 0;
+            padding: 20px;
+            border-left: 5px solid #d00000;
+            list-style: none;
+            border-radius: 8px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+        }
+
+        .numero {
+            display: inline-block;
+            background: #c00000;
+            color: white;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .conclusao {
+            text-align: center;
+            background: #f0f0f0;
+        }
+
+        .conclusao p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 19px;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background: #c00000;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background: #8b0000;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #700000;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 34px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 50px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🤖 IA e Deepfakes nas Eleições</h1>
+        <p>
+            Como a inteligência artificial pode transformar a comunicação política,
+            influenciar eleitores e aumentar o desafio contra a desinformação.
+        </p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#deepfake">Deepfakes</a>
+        <a href="#riscos">Riscos</a>
+        <a href="#identificar">Como identificar</a>
+        <a href="#conclusao">Conclusão</a>
+    </nav>
+
+    <section id="sobre">
+        <h2 class="titulo">O que é Inteligência Artificial?</h2>
+
+        <div class="intro">
+            <p>
+                A <strong>Inteligência Artificial (IA)</strong> é uma tecnologia capaz
+                de realizar tarefas que normalmente exigiriam capacidades humanas,
+                como analisar informações, produzir textos, criar imagens e gerar
+                conteúdos de áudio e vídeo.
+            </p>
+
+            <br>
+
+            <p>
+                Durante períodos eleitorais, essas ferramentas podem ser utilizadas
+                de maneira positiva, por exemplo, para facilitar o acesso à informação.
+                Porém, também podem ser utilizadas para criar conteúdos falsos e
+                enganosos.
+            </p>
+        </div>
+    </section>
+
+    <section id="deepfake">
+        <h2 class="titulo">O que são Deepfakes?</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🎭 Imagens falsas</h3>
+                <p>
+                    A IA pode criar imagens extremamente realistas de pessoas
+                    em situações que nunca aconteceram.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🎥 Vídeos manipulados</h3>
+                <p>
+                    Deepfakes podem fazer uma pessoa parecer dizer ou fazer
+                    algo que nunca disse ou fez.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🎙️ Áudios falsos</h3>
+                <p>
+                    Sistemas de IA podem imitar vozes e produzir falas
+                    artificialmente, dificultando a identificação da falsificação.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="riscos" class="perigo">
+        <div class="perigo-conteudo">
+
+            <h2 class="titulo">⚠️ Riscos nas Eleições</h2>
+
+            <div class="alerta">
+                <strong>Desinformação:</strong>
+                conteúdos falsos podem espalhar informações incorretas
+                sobre candidatos e partidos.
+            </div>
+
+            <div class="alerta">
+                <strong>Manipulação:</strong>
+                vídeos e áudios falsificados podem tentar influenciar
+                a opinião dos eleitores.
+            </div>
+
+            <div class="alerta">
+                <strong>Perda de confiança:</strong>
+                a existência de conteúdos falsos pode fazer com que
+                as pessoas deixem de confiar até mesmo em conteúdos verdadeiros.
+            </div>
+
+            <div class="alerta">
+                <strong>Velocidade de propagação:</strong>
+                conteúdos criados por IA podem ser compartilhados rapidamente
+                pelas redes sociais.
+            </div>
+
+        </div>
+    </section>
+
+    <section id="identificar" class="como-identificar">
+        <h2 class="titulo">🔎 Como identificar um possível Deepfake?</h2>
+
+        <ul class="lista">
+
+            <li>
+                <span class="numero">1</span>
+                <strong>Verifique a fonte:</strong>
+                procure saber quem publicou o conteúdo originalmente.
+            </li>
+
+            <li>
+                <span class="numero">2</span>
+                <strong>Compare informações:</strong>
+                procure a mesma notícia em veículos confiáveis.
+            </li>
+
+            <li>
+                <span class="numero">3</span>
+                <strong>Observe o vídeo:</strong>
+                movimentos estranhos, expressões artificiais e problemas
+                de sincronização podem ser sinais de manipulação.
+            </li>
+
+            <li>
+                <span class="numero">4</span>
+                <strong>Analise o áudio:</strong>
+                mudanças estranhas na voz, pausas artificiais ou sons
+                inconsistentes podem indicar uma falsificação.
+            </li>
+
+            <li>
+                <span class="numero">5</span>
+                <strong>Não compartilhe imediatamente:</strong>
+                antes de compartilhar uma informação, confirme se ela
+                é verdadeira.
+            </li>
+
+        </ul>
+    </section>
+
+    <section id="conclusao" class="conclusao">
+        <h2 class="titulo">Conclusão</h2>
+
+        <p>
+            A Inteligência Artificial pode trazer muitos benefícios para a sociedade,
+            mas seu uso irresponsável nas eleições pode aumentar a desinformação
+            e dificultar a escolha consciente dos eleitores.
+        </p>
+
+        <br>
+
+        <p>
+            Por isso, é importante desenvolver uma postura crítica, verificar as
+            informações e pensar antes de compartilhar conteúdos nas redes sociais.
+        </p>
+
+        <a href="#sobre" class="botao">Voltar ao início ↑</a>
+    </section>
+
+    <footer>
+        <p>© 2026 — IA, Deepfakes e Eleições</p>
+        <p>Informação, tecnologia e cidadania digital.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+Se quiser, posso também transformar esse HTML em uma versão **mais bonita, com animações, imagens, ícones e aparência de trabalho escolar/profissional**.
